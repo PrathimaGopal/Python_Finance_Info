@@ -33,5 +33,7 @@ tqdm==4.60.0
 urllib3==1.26.4
 w3lib==1.22.0
 websockets==8.1
-Werkzeug==1.0.1
+yahoo-fin==0.8.8
+yahoo-finance==1.4.0
 yfinance==0.1.59
+Werkzeug==1.0.1
