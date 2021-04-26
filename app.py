@@ -2,12 +2,9 @@ from time import gmtime, strftime
 import json
 import requests
 from flask import Flask,render_template,request
+from yahoo_fin.stock_info import get_live_price
 
 app = Flask(__name__)
-
-def valid_ticker(ticker):
-    #Check whether given ticker is a valid stock symbol.
-    return get_name(ticker.upper()) != 'N/A'
 
 @app.route('/', methods = ['GET'])
 def index():
