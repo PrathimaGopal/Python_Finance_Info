@@ -17,6 +17,6 @@ This python program will take a stock symbol as input and output the following:
 
 #Things to do:
 
-pip install -r requirements.txt
-set FLASK_APP = app.py
-flask run
+- pip install -r requirements.txt
+- set FLASK_APP = app.py
+- flask run
