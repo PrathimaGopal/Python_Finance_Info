@@ -1,5 +1,5 @@
 from time import gmtime, strftime
-import json
+import time
 import requests
 from flask import Flask,render_template,request
 from yahoo_fin.stock_info import get_live_price
@@ -25,7 +25,7 @@ def result():
         tickerSymbol = request.form.get("symbol")
         tickerSymbol = tickerSymbol.upper()
         #Date and Time String
-        date_string = strftime("%a %b %d %H:%M:%S PDT %Y", gmtime())
+        date_string = str(time.strftime("%c"))+" PDT"
         #Connecting to Sandbox API to receive stock details
 
         try:
