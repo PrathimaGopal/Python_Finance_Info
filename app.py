@@ -2,7 +2,6 @@ from time import gmtime, strftime
 import json
 import requests
 from flask import Flask,render_template,request
-from yahoo_fin.stock_info import *
 
 app = Flask(__name__)
 
